@@ -36,52 +36,54 @@ public void setNum(int n)
 }
 //isOdd method
 
-public void isOdd(int p)
+public boolean isOdd()
 {
+  int q = this.getNum();
   boolean odd = false;
-
-  if((p%2)==0)
+  if(q % 2 == 0)
   {
     odd = false;
   }
-
   else
   {
     odd = true;
   }
-
+  return odd;
 }
 
+//isPerfect
 
-
-
-
-
-//isPerfect method
-public void isPerfect(int a)
+public boolean isPerfect()
 {
+  int q = this.getNum();
   int total = 0;
   boolean perfect = false;
 
-  for(int i=0; i<(a-1);i++)
+  for(int i=1; i<q-1; i++)
   {
-    if((a%i)==0)
+    if(q%i == 0)
     {
-      total+=i;
+      total += i;
     }
-
   }
 
-  if(total==a)
+  if(total == q)
   {
     perfect = true;
   }
-
   else
   {
     perfect = false;
   }
+
+  return perfect;
+}
+//toString
+
+
+public String toString(Number sample)
+{
+  return("");
 }
 
 }
-//toString
