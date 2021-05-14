@@ -81,9 +81,9 @@ public boolean isPerfect()
 //toString
 
 
-public String toString(Number sample)
+public String toString()
 {
-  return("");
+  return(num.toString());
 }
 
 }
